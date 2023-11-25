@@ -1,0 +1,85 @@
+/* HTML Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4CAF50;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #388E3C;
+}
+
+/* Table */
+table {
+    background-color: #81C784;
+    border: 1px solid #558B2F;
+    border-collapse: collapse;
+    width: 600px;
+    margin: auto;
+}
+
+th, td {
+    border: 1px solid #558B2F;
+    padding: 10px;
+    text-align: center;
+}
+
+th#name {
+    text-align: center;
+}
+
+.name {
+    text-align: right;
+}
+
+/* Images */
+img {
+    padding: 10px;
+    border: 1px solid #0fa3b1;
+    height: 200px;
+    width: 150px;
+    display: block;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #388E3C;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* learned from codeacademy*/
+
+a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+a:hover::before {
+    transform: scaleX(1);
+}
+
+a:active {
+    color: #388E3C; 
+}
+
